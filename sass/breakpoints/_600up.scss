@@ -1,0 +1,39 @@
+/******************************************************************
+Stylesheet: 600px以上のタブレットやモニタで適用
+******************************************************************/
+
+.font-sm {
+  font-size: 17px;
+}
+
+.font-lr {
+  font-size: 25px;
+}
+
+.font-lg {
+  font-size: 55px;
+  font-weight: 600;
+}
+.mb-sm {
+  margin-bottom: 16px !important;
+}
+
+.mb-md {
+  margin-bottom: 40px !important;
+}
+
+.mb-lg {
+  margin-bottom: 100px !important;
+}
+
+/******************************************************************
+main visual
+******************************************************************/
+.main-visual {
+  height: 1000px;
+}
+
+article {
+  max-width: 900px;
+  margin: 0 auto;
+}

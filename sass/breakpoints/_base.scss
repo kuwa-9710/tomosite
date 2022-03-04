@@ -1,0 +1,480 @@
+/******************************************************************
+variables
+******************************************************************/
+$cBlue: #5552f7;
+$skyBlue: #2da2df;
+$cPink: #df5197;
+$cPurple: #e842f5;
+
+/******************************************************************
+Stylesheet: ベーススタイル
+******************************************************************/
+#page {
+  overflow: hidden;
+}
+
+.font-sm {
+  font-size: 17px;
+}
+.font-md {
+  font-size: 19px;
+}
+.font-lr {
+  font-size: 30px;
+  font-weight: bold;
+}
+.font-lg {
+  font-size: 35px;
+  font-weight: 600;
+}
+.mb-sm {
+  margin-bottom: 16px !important;
+}
+
+.mb-md {
+  margin-bottom: 40px !important;
+}
+
+.mb-lg {
+  margin-bottom: 100px !important;
+}
+
+.mb-xlg {
+  margin-bottom: 200px !important;
+}
+
+.pb-sm {
+  padding-bottom: 16px !important;
+}
+.pb-lg {
+  padding-bottom: 100px !important;
+}
+
+.pt-lg {
+  padding-top: 50px !important;
+}
+
+.border-top {
+  border-top: 1px solid rgba(196, 196, 196, 0.5);
+}
+
+.subtitle {
+  color: #616161;
+
+  & span {
+    color: #2da2df;
+  }
+}
+
+
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+/******************************************************************
+animaiton setting
+******************************************************************/
+.fadeInLeftTrigger {
+  opacity: 0;
+}
+
+.fadeInUpTrigger {
+  opacity: 0;
+}
+
+/******************************************************************
+particles.js
+******************************************************************/
+
+#wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+a {
+  color: #fff;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+#particles-js {
+  position: fixed; /*描画固定*/
+  z-index: -1; /*描画を一番下に*/
+  width: 100%;
+  height: 100%;
+  // color: #969696;
+}
+
+#wrapper {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+/******************************************************************
+original classes
+******************************************************************/
+
+.btn {
+  background-color: rgba(153, 199, 252, 0.3);
+  color: $skyBlue;
+  border-radius: 30px;
+  padding: 10px 20px;
+}
+
+.subheading {
+  display: block;
+  height: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.blue {
+  color: $cBlue;
+}
+
+/******************************************************************
+nav
+******************************************************************/
+nav {
+  & .navbar-nav {
+    text-align: end;
+
+    & .nav-item {
+      margin-top: 10px;
+
+      & a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
+} // nav
+
+/******************************************************************
+header 
+******************************************************************/
+header {
+  & h1 {
+    font-size: 20px;
+  }
+}
+
+/******************************************************************
+  main 
+******************************************************************/
+
+.main-visual {
+  height: 800px;
+  position: relative;
+
+  & .bigtitle {
+    padding-top: 125px;
+
+    & p {
+      width: 90%;
+      // font-size: 14px;
+    }
+  }
+
+  & .fluid {
+    position: absolute;
+    top: -30px;
+    right: -40px;
+    width: 40vh;
+    height: 40vh;
+    background: linear-gradient(
+      90deg,
+      rgba(103, 158, 255, 0.2) 0%,
+      rgba(15, 206, 164, 0.2) 100%
+    );
+    animation: fluidrotate 30s ease 0s infinite;
+    z-index: -1;
+  }
+}
+
+@keyframes fluidrotate {
+  0%,
+  100% {
+    border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+  }
+  14% {
+    border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
+  }
+  28% {
+    border-radius: 54% 46% 38% 62%/49% 70% 30% 51%;
+  }
+  42% {
+    border-radius: 61% 39% 55% 45%/61% 38% 62% 39%;
+  }
+  56% {
+    border-radius: 61% 39% 67% 33%/70% 50% 50% 30%;
+  }
+  70% {
+    border-radius: 50% 50% 34% 66%/56% 68% 32% 44%;
+  }
+  84% {
+    border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
+  }
+}
+
+/******************************************************************
+  about 
+******************************************************************/
+
+#about {
+  background-color: rgba(182, 220, 255, 0.1);
+  & .about {
+    & span {
+      color: $cBlue;
+    }
+    & .btn {
+      color: $cBlue;
+      background-color: rgba(103, 182, 255, 0.21);
+    }
+    & i {
+      margin-right: 20px;
+    }
+    & .fas {
+      color: $cBlue;
+    }
+    & .fab {
+      color: $cBlue;
+    }
+  }
+}
+
+.contentbox {
+  overflow: hidden;
+  & span {
+    margin-bottom: 20px;
+  }
+
+  & .mdtitle {
+    margin-bottom: 40px;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: Bold;
+  }
+
+  & .subheading {
+    margin-bottom: 40px;
+  }
+
+  & .subtitle {
+    width: 90%;
+    margin-bottom: 50px;
+  }
+
+  & .btn {
+    margin-bottom: 30px;
+  }
+}
+
+/******************************************************************
+  skills 
+******************************************************************/
+#skill {
+  background-color: rgba(252, 220, 236, 0.1);
+  & .skills {
+    & .subheading {
+      color: $cPink;
+    }
+    & .btn {
+      color: $cPink;
+      background-color: rgba(223, 81, 151, 0.12);
+    }
+
+    & .subtitle {
+      & span {
+        color: $cPink;
+      }
+    }
+  }
+}
+
+#tool {
+  & .subheading {
+    color: $cPink;
+  }
+
+  & h3 {
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: bold;
+  }
+
+  & .tool {
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: center;
+    & .toolbox {
+      width: 200px;
+      background-color: #e2e2e24d;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 20px 15px 20px;
+      margin: 10px;
+      border-radius: 20px;
+      & .fas {
+        color: $cPink;
+        margin-bottom: 5px;
+      }
+      & .fab {
+        color: $cPink;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+
+/******************************************************************
+  works
+******************************************************************/
+#work {
+  & .workbox {
+    background-color: rgba(196, 232, 252, 0.1);
+  }
+
+  & .works {
+    & .subheading {
+      color: $skyBlue;
+    }
+    & .btn {
+      color: $skyBlue;
+      background-color: rgba(142, 216, 255, 0.21);
+    }
+  }
+
+  & .heading01 {    
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 23px;
+      font-weight: bold;
+      text-align: center;
+      color: #3fc1c9;
+    &::before,
+    &::after {
+      content: '';
+      width: 3px;
+      height: 40px;
+      background-color: #3fc1c9;
+    }   
+    &::before {
+      margin-right: 30px;
+      transform: rotate(-35deg)
+    }
+    &::after {
+      margin-left: 30px;
+      transform: rotate(35deg)
+    }
+  }
+}
+
+
+/******************************************************************
+news
+******************************************************************/
+#news {
+  background-color: rgba(209, 255, 247, 0.1);
+  & .subheading {
+    color: #27ca99;
+  }
+
+  & p {
+    border-bottom: 2px dashed rgba(0, 0, 0, 0.493);
+    padding-bottom: 5px;
+  }
+
+  & a {
+    color: rgb(0, 116, 194);
+    
+    
+  }
+}
+
+/******************************************************************
+Work Flow
+******************************************************************/
+.workflow {
+  border-bottom: 1px solid rgba(196, 196, 196, 0.5);
+  background-color: rgba(252, 226, 255, 0.1);
+  & .subheading {
+    color: $cPurple;
+  }
+  & .btn {
+    color: $cPurple;
+    background-color: rgba(246, 162, 253, 0.21);
+  }
+
+  & .subtitle {
+    & span {
+      color: $cPurple;
+    }
+  }
+}
+/******************************************************************
+footer.php フッター
+******************************************************************/
+
+.site-footer {
+  height: 60px;
+  color: rgb(68, 68, 68);
+  text-align: center;
+  padding-top: 20px;
+}
+
+/******************************************************************
+posts
+******************************************************************/
+
+article {
+  background-color: #fff;
+
+  & .fas {
+    color: #ababab;
+  }
+
+  & h2 {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    
+  }
+
+  & p {
+    font-size: 19px;
+    line-height: 2rem;
+  }
+}
+
+.publicdate {
+  display: block;
+}
+
+.entry-content {
+  & h2 {
+    padding: 1rem;
+    border-left: 5px solid rgb(0, 199, 235);
+    background: #fafafa;
+  }
+  & h3 {
+    padding-bottom: 1rem;
+    border-bottom: 3px dotted #000;
+  }
+}
+
+.container, .container-lg, .container-md, .container-sm {
+  max-width: 960px;
+}
+

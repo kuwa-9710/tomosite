@@ -1,0 +1,76 @@
+/******************************************************************
+
+Stylesheet: 960px以上のモニタで適用
+
+******************************************************************/
+
+.font-sm {
+  font-size: 19px;
+}
+.font-md {
+  font-size: 23px;
+}
+.font-lr {
+  font-size: 30px;
+}
+.font-lg {
+  font-size: 70px;
+}
+.mb-lg {
+  margin-bottom: 150px !important;
+}
+.pb-lg {
+  padding-bottom: 150px !important;
+}
+
+.bg-image-r {
+  & img {
+    width: 800px;
+  }
+}
+
+.bg-image-l {
+  & img {
+    width: 800px;
+  }
+}
+
+/******************************************************************
+nav
+******************************************************************/
+nav {
+  & .navbar-nav {
+    text-align: end;
+
+    & .nav-item {
+      margin: 0 15px 0 0;
+    }
+  }
+} // nav
+
+/******************************************************************
+main visual
+******************************************************************/
+.main-visual {
+
+  & .big-title {
+
+    & p {
+      font-size: 25px;
+    }
+  }
+}
+
+.subtitle {
+  font-size: 25px;
+}
+
+.btn {
+  background-color: rgba(153, 199, 252, 0.3);
+  color: $skyBlue;
+  border-radius: 30px;
+  padding: 10px 20px;
+  width: 200px;
+  height: 50px;
+  font-size: 22px;
+}
